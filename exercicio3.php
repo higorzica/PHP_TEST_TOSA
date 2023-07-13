@@ -20,8 +20,8 @@ function counterWord($sentence = "", $word = "")
     $array = explode(" ", $sentence);
     // print($n_palavras);
     foreach ($array as $key) {
-        echo substr_count($key, $word);
         if($key == $word){
+            echo substr_count($key, $word);
             return;
         }
     }
